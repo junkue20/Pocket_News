@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포켓뉴스 - 세상의 모든 뉴스를 한번에!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./src/font/TheJamsil1Thin.ttf" format="woff2" />
+    <script type="module" defer src="./src/index.js"></script>
+  </head>
+  <body>
+    <!-- 상단으로 가기 버튼 (하단우측) -->
+    <div class="moveTopBtn">
+      <p>맨 위로</p>
+    </div>
+    <!-- <div id="root"></div> -->
+    <main>
+      <!-- 검색 영역 -->
+      <section class="search-section">
+        <form class="search-form" action="">
+          <input type="text" class="search-input" placeholder="뉴스 키워드를 입력해주세요!" />
+          <input type="submit" class="search-btn" value="검색" />
+        </form>
+      </section>
+      <!-- 뉴스 영역 -->
+      <section class="news-section">
+        <ul class="news-lists"></ul>
+      </section>
+      <div class="loader"></div>
+    </main>
+  </body>
+</html>
